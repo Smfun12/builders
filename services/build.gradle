@@ -1,0 +1,16 @@
+plugins {
+   
+}
+repositories{
+    mavenCentral()
+}
+
+dependencies{
+implementation project(':utils')
+
+testImplementation group: 'junit', name: 'junit', version: '4.4'
+}
+
+jar {
+	enabled = true
+}
