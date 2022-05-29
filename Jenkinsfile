@@ -14,6 +14,7 @@ pipeline {
                 expression { params.tool_id == 'maven' }
             }
             steps {
+				sh 'chmod +x ./mvnw'
                 sh './mvnw package'
             }
         }
